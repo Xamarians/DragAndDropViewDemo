@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DragandDropDemo.DragandDropPage">
+    <ContentView>
+        <ContentView.GestureRecognizers>
+            <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+        </ContentView.GestureRecognizers>
+    <AbsoluteLayout>
+        <!--<AbsoluteLayout.GestureRecognizers>
+            <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"/>
+        </AbsoluteLayout.GestureRecognizers>-->
+        <StackLayout x:Name="layout1" BackgroundColor="Aquamarine" AbsoluteLayout.LayoutBounds="0.2, 0.2, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" InputTransparent="True"/>
+            <StackLayout x:Name="layout2" BackgroundColor="Azure" AbsoluteLayout.LayoutBounds="0.8, 0.2, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" InputTransparent="True"/>
+            <StackLayout x:Name="layout3" BackgroundColor="BlanchedAlmond" AbsoluteLayout.LayoutBounds="0.2, 0.8, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" InputTransparent="True"/>
+            <StackLayout x:Name="layout4" BackgroundColor="DarkCyan" AbsoluteLayout.LayoutBounds="0.8, 0.8, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" InputTransparent="True"/>
+            <Image Source="Icon.png" x:Name="image2" AbsoluteLayout.LayoutBounds="0.2, 0.2, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional" InputTransparent="True"/>
+    </AbsoluteLayout>
+    </ContentView>
+</ContentPage>

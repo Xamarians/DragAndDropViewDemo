@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DragandDropDemo"
+             x:Class="DragandDropDemo.MainPage">
+
+    <ContentView>
+        <ContentView.GestureRecognizers>
+            <PanGestureRecognizer PanUpdated="PanGestureRecognizer_PanUpdated"></PanGestureRecognizer>
+        </ContentView.GestureRecognizers>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" x:Name="layout1" BackgroundColor="OldLace" HeightRequest="100" WidthRequest="100" InputTransparent="True">
+                <Image Source="Icon.png" VerticalOptions="Center" HorizontalOptions="Center"  x:Name="image1"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" x:Name="layout2" BackgroundColor="Red" HeightRequest="100" WidthRequest="100" InputTransparent="True"/>
+            <StackLayout Grid.Row="1" Grid.Column="0" HeightRequest="100" WidthRequest="100" x:Name="layout3" BackgroundColor="Yellow" VerticalOptions="Center" HorizontalOptions="Center" InputTransparent="True"/>
+            <StackLayout Grid.Row="1" Grid.Column="1" HeightRequest="100" WidthRequest="100" x:Name="layout4" BackgroundColor="Green" VerticalOptions="Center" HorizontalOptions="Center" InputTransparent="True"/>
+
+            <!--<Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizerImage1"/>
+            </Image.GestureRecognizers>-->
+           
+            <!--<Image Source="Icon.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" x:Name="image3"  Opacity="0.2">
+                --><!--<Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizerImage1"/>
+            </Image.GestureRecognizers>--><!--
+            </Image>
+            <Image Source="Icon.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" x:Name="image4"  Opacity="0.2">
+                --><!--<Image.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizerImage1"/>
+            </Image.GestureRecognizers>--><!--
+            </Image>-->
+        </Grid>
+    </ContentView>
+
+</ContentPage>
